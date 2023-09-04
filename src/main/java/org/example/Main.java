@@ -9,6 +9,6 @@ public class Main {
         System.out.println(MyMath.tg(56));
         System.out.println(MyMath.areaCircle(78));
         System.out.println(MyMath.lengthCircle(89));
-        System.out.println(MyMath.random(0)); //каждый раз задовать новое значение
+        System.out.println(MyMath.random()); //каждый раз задовать новое значение
     }
 }

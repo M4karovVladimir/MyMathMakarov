@@ -55,21 +55,22 @@ public class MyMath {
         return 2 * PI * radius;
     }
 
-    public static double random(double numbers) {
-        Random random = new Random();
-        numbers = random.nextDouble(49, 67);
-        return numbers;
+    public static double random(int max, int min){
+        return (int) (min + System.currentTimeMillis() % (max - min +1));
+    }
+    public static int random(){
+        return (int) ((System.currentTimeMillis()/9)%10);
     }
 
 
     public static int maxNumbers(int a, int b) {
-        if (a > b) {
+        if(a > b) {
             return a;
         } else return b;
     }
 
     public static float maxNumbers(float a, float b) {
-        if (a > b) {
+        if(a > b) {
             return a;
         } else return b;
     }
